@@ -31,7 +31,7 @@ def load_data(file_path_a, file_path_s):
     data_mat_s = []
     data_arr_s = []
     for line in fr_a.readlines():
-        line_arr = line.strip().split('\t')
+        line_arr = line.strip().split(',')
         data_mat_a.append([int(line_arr[0]), int(line_arr[1])])
 
     for line in fr_s.readlines():
